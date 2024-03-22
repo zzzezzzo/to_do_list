@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    background-image: url('pexels-george-desipris-726478.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container{
+    max-width: 800px;
+    background-color: transparent;
+    max-height: auto;
+    border-radius: 20px;
+    margin: 20px auto 0;
+    padding: 20px 5%;
+}
+h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    color: aqua;
+    text-shadow: 2px 2px 6px aqua;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    background-color: transparent;
+    padding: 10px;
+    
+}
+.form input {
+    border: none;
+    border-bottom: 1px solid aqua;
+    padding: 5px 50px;
+    background: none;
+    color: white;
+    font-size: 20px;
+}
+.form input:focus{
+    outline: none;
+    border: none;
+}
+.form button{
+    padding: 5px 30px;
+    border: none;
+    border-radius: 10px 10px 10px 0;
+    color: white;
+    font-size: 16px;
+    background-color: rgb(5, 170, 170);
+    cursor: pointer;
+}
+.form button:hover{
+    color: aqua;
+    background-color: rgb(6, 180, 151);
+}
+li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 15px 5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+}
+li p {
+    color: rgb(9, 32, 30);
+    font-size: 20px;
+    font-weight: 700;
+}
+li button:not(:last-child) {
+    margin-left: auto;
+    text-align: end;
+}
+.remove-btn {
+    padding: 3px 15px;
+    border: 1px solid red;
+    border-radius: 10px 0 0 10px;
+    color: red;
+    background-color: white;
+    cursor: pointer;
+}
+.remove-btn:hover{
+    background-color: red;
+    color: white;
+}
+.done-btn {
+    padding: 3px 15px;
+    border: 1px solid green;
+    border-radius: 0 10px 10px 0;
+    color: green;
+    background-color: white;
+    margin-left: 2px;
+    cursor: pointer;
+}
+.done-btn:hover{
+    background-color: green;
+    color: white;
+}
+.ops p {
+    text-decoration: line-through;
+    opacity: 0.5;
+    color: rgb(255, 255, 255);
+}
+@media (max-width:450px){
+    body{
+        overflow: hidden;
+    }
+    .form button{
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+    #content li {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container{
+        max-width: 300px;
+        width: 100%;
+    }
+}
