@@ -45,7 +45,9 @@ container.addEventListener('click', function(t){
     else if (t.target.className === "done-btn"){
         const parant = t.target.parentElement;
         parant.classList.toggle("ops");
-        saveData()
+        saveData();
+        setTimeout(showDone,100);
+        setTimeout(deleteDone,2000);
     }
 },false);
 // this function is respons to push the data from the locale stoage
@@ -58,6 +60,14 @@ function showTask(){
 }
 // call function show task
 showTask();
+function showDone(){
+    const done = document.getElementById("done");
+    done.style.display = "block"
+}
+function deleteDone(){
+    const done = document.getElementById("done");
+    done.style.display = "none"
+}
 
 
 
