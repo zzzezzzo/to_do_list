@@ -134,7 +134,7 @@ li button:not(:last-child) {
 }
 @media (max-width:450px){
     body{
-        overflow: hidden;
+        overflow-y: hidden;
     }
     .form button{
         border-radius: 10px;

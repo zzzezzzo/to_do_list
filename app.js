@@ -1,7 +1,7 @@
 const add_btn = document.getElementById("add-btn");
 const container = document.getElementById("content");
 const done = document.getElementsByClassName("done-btn");
-// add_btn.addEventListener('click', add());
+const re_form = document.getElementById("form");
 function add() {
     const add_task = document.getElementById("input-task").value ;
     if (add_task == "") {
@@ -32,7 +32,7 @@ function add() {
         new_li.appendChild(done_btn);
         container.appendChild(new_li);
     }
-    add_task.value = '';
+    re_form.reset();
     saveData();
 };
 container.addEventListener('click', function(t){
